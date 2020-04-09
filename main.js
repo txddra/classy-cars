@@ -1,4 +1,7 @@
 class Vehicle {
+  constructor(name){
+this.name = name;
+  }
 }
 
 class Car {
