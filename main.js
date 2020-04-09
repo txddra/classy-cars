@@ -1,6 +1,7 @@
 class Vehicle {
-  constructor(name){
+  constructor(name, wheelCount){
 this.name = name;
+this.wheelCount = wheelCount;
   }
 }
 
