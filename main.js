@@ -1,7 +1,8 @@
 class Vehicle {
-  constructor(name, wheelCount){
+  constructor(name, wheelCount, maxSpeed){
 this.name = name;
 this.wheelCount = wheelCount;
+this.maxSpeed = maxSpeed;
   }
 }
 
