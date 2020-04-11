@@ -18,11 +18,18 @@ class Car extends Vehicle {
   constructor(wheelCount){
     super(wheelCount, 4)
   }
+  // constructor(maxSpeed){
+  //   super(maxSpeed, 80)
+  
   // wheelCount = 4
   // this.wheelCount = 4
-}
 
-class Ferrari {
+  // sayVroom() {
+  //   constructor(c){
+  //   return 'Vroom';
+  }
+
+class Ferrari extends Car {
 }
 
 
