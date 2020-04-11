@@ -9,14 +9,16 @@ this.speed = 0;
 
   }
   accelerate(){
-  return ` ${this.speed} + ${this.maxSpeed} / 3 `
+    if(this.speed < this.maxSpeed)
+    this.speed = this.speed + (1/3 * this.maxSpeed)
+  } 
     // return this.speed + this.maxSpeed / 3
   } 
-}
+
 
 class Car extends Vehicle {
-  constructor(wheelCount){
-    super(wheelCount, 4)
+  constructor(name){
+    super(name, 4)
   }
   // constructor(maxSpeed){
   //   super(maxSpeed, 80)
@@ -24,14 +26,16 @@ class Car extends Vehicle {
   // wheelCount = 4
   // this.wheelCount = 4
 
-  // sayVroom() {
-  //   constructor(c){
-  //   return 'Vroom';
-  }
-
-class Ferrari extends Car {
+//   drive(){ 
+//  return "Vroom."
+//   }    
 }
-
+class Ferrari extends Car { 
+  constructor(){
+    super(name, 'Ferrari')
+    
+  }
+}
 
 module.exports = {
   Vehicle,
