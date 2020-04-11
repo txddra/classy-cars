@@ -17,8 +17,8 @@ this.speed = 0;
 
 
 class Car extends Vehicle {
-  constructor(name){
-    super(name, 4)
+  constructor(name, value){
+    super(name, 4, value)
   }
   // constructor(maxSpeed){
   //   super(maxSpeed, 80)
@@ -26,15 +26,23 @@ class Car extends Vehicle {
   // wheelCount = 4
   // this.wheelCount = 4
 
-//   drive(){ 
-//  return "Vroom."
-//   }    
+  drive(){ 
+ return "Vroom. "
+  }    // I kept getting this wrong because of the space!!
 }
 class Ferrari extends Car { 
   constructor(){
-    super(name, 'Ferrari')
+    super('Ferrari', 180)
     
   }
+  drive(){
+    return "Vroom. I'm a Ferrari!"
+  }
+  accelerate(){
+    if(this.speed < this.maxSpeed)
+    this.speed = this.speed + (1/2 * this.maxSpeed)
+}
+
 }
 
 module.exports = {
